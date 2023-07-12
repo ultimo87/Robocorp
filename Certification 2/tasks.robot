@@ -25,6 +25,7 @@ Order robots from RobotSpareBin Industries Inc
         Wait Until Keyword Succeeds    3x    1.5 sec    Download and store the receipt    ${element}
         Order another Robot
     END
+    [Teardown]    Close RobotSpareBin Browser
 
 
 
@@ -66,6 +67,5 @@ Download and store the receipt
 Order another Robot
     Click Button    order-another
 
-Log out and close the browser
-    Click Button    Log out
+Close RobotSpareBin Browser
     Close Browser
